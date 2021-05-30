@@ -1,34 +1,31 @@
 import React from "react";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
 import ExperienceItem from "./experienceItem";
 import experienceHistory from "./experienceHistory.json";
-import print from './toPDF';
+import print from "./toPDF";
 import "./resume.scss";
 import avatar from "./avatar.png";
 const Resume = () => {
-  ReactGA.pageview('/resume');
+  ReactGA.pageview("/resume");
   // const birthDay = moment("1998-12-09");
   // const years = moment().diff(birthDay, "years");
   return (
     <div className="resume">
       <div className="header">
-        <img
-          className="avatar"
-          src={avatar}
-          alt="avatar"
-        />
+        <img className="avatar" src={avatar} alt="avatar" />
         <div className="name">
           <h2>Timur Samoylov</h2>
           <p>developer you deserve</p>
-          <button onClick={() => print()} id="download_resume">Download PDF</button>
+          <button onClick={() => print()} id="download_resume">
+            Download PDF
+          </button>
         </div>
       </div>
       <section className="general-info">
         <h3>General info:</h3>
         <ul>
           {/* <li>{`Date of Birth: 09/12/1998 (${years} years old)`}</li> */}
-          <li>{`Current location: Minsk, Belarus`}</li>
-          <li>Phone: +375 (33) 363-23-35</li>
+          <li>{`From: Minsk, Belarus`}</li>
           <li>
             E-mail:{" "}
             <a
@@ -92,15 +89,13 @@ const Resume = () => {
         <h3>Well known tech:</h3>
         <ul>
           <li>Frontend: React, Angular, Webpack, Redux, RxJs, Sass</li>
-          <li>Backend: ts-node, Express, Koa</li>
           <li>Tools: Git, Firebase, Heroku, zeit (now)</li>
-          <li>Databases: MongoDB</li>
-          <li>Blockchain: EOSJS, Truffle, Web3, Solidity</li>
+          <li>Blockchains: Ethereum, EOS, Tezos, Solana</li>
         </ul>
       </section>
       <section className="experience">
         <h3>Experience:</h3>
-        {experienceHistory.map(params => (
+        {experienceHistory.map((params) => (
           <ExperienceItem {...params} key={params.name} />
         ))}
       </section>

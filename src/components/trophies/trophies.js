@@ -85,11 +85,14 @@ const Trophies = () => {
     },
   ];
   return (
-    <div className="trophies">
-      {cards.map(({ ...props }) => (
-        <Card key={props.title} {...props} />
-      ))}
-    </div>
+    <>
+      <h1 className="trophies-title">Trophies</h1>
+      <div className="trophies">
+        {cards.map(({ ...props }) => (
+          <Card key={props.title} {...props} />
+        ))}
+      </div>
+    </>
   );
 };
 export default Trophies;

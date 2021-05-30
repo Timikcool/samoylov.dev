@@ -1,37 +1,36 @@
-@import './mixins.scss';
-@import './clay.scss';
-@import './glitch.scss';
+@import "./mixins.scss";
+@import "./clay.scss";
+@import "./glitch.scss";
 @font-face {
   font-family: "Eina";
   font-weight: normal;
-  src: url("./fonts/Eina03-Regular.ttf")
- }
- @font-face {
+  src: url("./fonts/Eina03-Regular.ttf");
+}
+@font-face {
   font-family: "Eina";
   font-weight: bold;
-  src: url("./fonts/Eina03-SemiBold.ttf") 
- }
- @font-face {
+  src: url("./fonts/Eina03-SemiBold.ttf");
+}
+@font-face {
   font-family: "Eina";
   font-weight: bolder;
-  src: url("./fonts/Eina03-Bold.ttf") 
- }
- @font-face {
+  src: url("./fonts/Eina03-Bold.ttf");
+}
+@font-face {
   font-family: "Eina";
   font-weight: lighter;
-  src: url("./fonts/Eina03-Light.ttf") 
- }
- @font-face {
-  src: url('./fonts/MR\ ROBOT.ttf');
-  font-family: 'MR-ROBOT'
+  src: url("./fonts/Eina03-Light.ttf");
 }
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@font-face {
+  src: url("./fonts/MR\ ROBOT.ttf");
+  font-family: "MR-ROBOT";
+}
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 
-
- body {
+body {
   margin: 0;
   padding: 0;
-  font-family: "Eina";
+  font-family: "Eina", Lato, "Lucida Grande", Tahoma, Sans-Serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-height: 100vh;
@@ -59,11 +58,10 @@ header {
       display: flex;
       align-items: center;
       color: white;
-      &.active{
-
+      &.active {
       }
       &.disabled {
-          opacity: 0.65;
+        opacity: 0.65;
       }
     }
   }
@@ -85,6 +83,6 @@ footer {
   a {
     display: flex;
     align-items: center;
-    color:white;
+    color: white;
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 export default ({ link, title }) => {
   const [hovered, setHovered] = useState(false);
   const toggleHover = () => setHovered(!hovered);
@@ -6,7 +6,7 @@ export default ({ link, title }) => {
     <a
       rel="noopener noreferrer"
       target="_blank"
-      className={hovered ? 'clay' : ''}
+      className={hovered ? "clay" : ""}
       onMouseEnter={toggleHover}
       onMouseLeave={toggleHover}
       href={link}
