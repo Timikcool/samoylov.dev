@@ -1,11 +1,12 @@
-.crypto-container {
-  height: 100%;
+.showcase-container {
+  min-height: 100%;
 }
-.crypto {
+
+.showcase {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  min-height: calc(100vh - 75px);
   --f-size: 1;
   --f-unit: 0.7vmin;
   --f: calc(var(--f-size) * var(--f-unit));
@@ -40,10 +41,6 @@
     }
   }
 
-  h2 {
-    font-family: "Press Start 2P";
-  }
-
   .pizza-text {
     width: 95%;
   }
@@ -71,6 +68,7 @@
 }
 
 .pet-projects {
+  width: 80%;
   h4 {
     span {
       font-weight: 300;
@@ -80,13 +78,17 @@
     padding: 0;
     list-style: none;
   }
+  .pet-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .pet-item {
     a {
       display: block;
       text-decoration: none;
       text-align: center;
       display: block;
-      padding: 10px 0;
+      padding: 10px;
       margin: 15px auto;
       font-weight: 600;
       max-width: 50%;
@@ -94,14 +96,19 @@
       border-color: white;
       background: transparent;
       color: white;
+      min-width: 200px;
+      min-height: 100px;
+      max-width: 425px;
+      max-height: 200px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      width: 250px;
       &:hover {
         background: white;
         color: black;
-      }
-      @media screen and (max-width: 768px) {
-        & {
-          max-width: 75%;
-        }
       }
     }
   }

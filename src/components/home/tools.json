@@ -7,7 +7,7 @@
   "Node.js",
   "Koa",
   "Truffle.js",
-  "Mocha",
+  "Jest",
   "Bootstrap",
   "Sass",
   "NPM",
@@ -18,9 +18,9 @@
   "TypeScript",
   "Semantic UI",
   "JavaScript",
-  "Three.js",
   "Express",
   "Electron",
-  "React Native",
-  "Material UI"
+  "Material UI",
+  "Ant Design",
+  "Chakra UI"
 ]
