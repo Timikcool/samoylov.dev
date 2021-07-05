@@ -89,7 +89,7 @@ const Resume = () => {
         <h3>Well known tech:</h3>
         <ul>
           <li>Frontend: React, Angular, Webpack, Redux, RxJs, Sass</li>
-          <li>Tools: Git, Firebase, Heroku, zeit (now)</li>
+          <li>Tools: Docker, Firebase, Heroku, zeit (now)</li>
           <li>Blockchains: Ethereum, EOS, Tezos, Solana</li>
         </ul>
       </section>
